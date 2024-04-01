@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+/* font-family: 'Alata', sans-serif;
+font-family: 'Crimson Text', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-orange: #f64c08;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly;  */
+  justify-content: space-between;
+  color: white;
+  background-color: #000;
+  top: 0;
+  position: sticky;
+  z-index: 2000;
+}
+
+.header_left {
+  flex: 0.4;
+}
+.header_left > h1 {
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
+.header_left h1 > span {
+  color: var(--primary-orange);
+}
+
+.header_right {
+  display: flex;
+  flex: 0.6;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header_right > a > h4 {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Crimson Text", serif;
+  /* padding: 20px 15px; */
+  padding: 15px 20px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.header_right > a > h4:hover {
+  color: #fff;
+}
+
+.header_right > a > h4::after {
+  content: "";
+  height: 3px;
+  width: 85%;
+  background: var(--primary-orange);
+  display: block;
+  position: absolute;
+  left: 8px;
+  bottom: 7px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.header_right > a > h4:hover::after {
+  opacity: 1;
+}
+
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* @media only screen and (max-width: 768px) { */
+
+@media only screen and (max-width: 768px) {
+  /* Header left */
+  .header_left {
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header_left > h1 {
+    font-size: 25px;
+  }
+
+  /* mobile view menu  */
+  .mobile-menu {
+    display: block;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+  }
+  .mobile-menu > .toggle_menu{
+    cursor: pointer;
+    font-size: 23px;
+  }
+  /* header right */
+  .header_right {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ff5202f6;
+    color: #fff;
+    left: 0;
+    text-align: center;
+    top: 68px;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 30vh;
+    cursor: pointer;
+  }
+  .nav-links-mobile > a > h4{
+    padding: 13px;
+  }
+}
+
+

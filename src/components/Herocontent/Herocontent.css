@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --primary-orange: #f64c08;
+}
+
+.heroContent {
+  color: white;
+  position: relative;
+}
+
+.heroContent_container {
+  position: absolute;
+  top: 350px;
+  right: 150px;
+}
+
+.heroContent_container > p {
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 3px;
+  padding-top: 20px;
+}
+
+.heroContent_container > a > button {
+  margin-top: 30px;
+  text-align: left;
+  border: none;
+  margin-left: 5px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.heroContent_container > h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heroContent_downloadbutton {
+  color: white;
+  background-color: var(--primary-orange);
+  font-size: 14px;
+  padding: 10px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.heroContent_downloadbutton:hover {
+  color: var(--primary-orange);
+  background: white;
+  font-weight: 600;
+}
+
+.heroContent_myworkbutton {
+  color: white;
+  border: 1px solid white !important;
+  background-color: transparent;
+  padding: 9px 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heroContent_myworkbutton:hover {
+  color: black;
+  background: white;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .heroContent_container > h1{
+    font-size: 35px
+  }
+  .heroContent_container {
+    position: absolute;
+    top: 245px;
+    left: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .heroContent_container {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+  }
+  .heroContent_container > h1 {
+    font-size: 40px;
+  }
+  .heroContent_myworkbutton {
+    display: none;
+  }
+}

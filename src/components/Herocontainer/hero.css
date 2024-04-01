@@ -1,0 +1,26 @@
+.hero_section {
+  /* background: url(../assets/portfolio-3.jpg); */
+  background: url(../assets/desktop-0.jpg);
+  transform: translatex(360deg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero_section {
+    background: url(../assets/desktop-0.jpg);
+    box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero_section {
+    background-position: center;
+  }
+}

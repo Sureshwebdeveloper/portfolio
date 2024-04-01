@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.error-container {
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 60px;
+  background: rgb(207, 205, 205);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 1;
+  scroll-behavior: smooth;
+}
+
+.child-one img {
+  height: 700px;
+  width: 700px;
+  margin-left: 50px;
+}
+
+.child-one,
+.child-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0.5;
+  width: 100%;
+}
+
+.child-two {
+  margin-left: 150px;
+}
+
+.msg {
+  font-weight: 600;
+  max-width: 250px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: -40px;
+}
+
+.error-button {
+  padding: 15px 35px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: rgb(255 76 76);
+  color: #fff;
+  cursor: pointer;
+  margin: 30px auto;
+}
+
+.error {
+  width: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* .error-container {
+    height: 100%;
+    width: 100vw;
+  } */
+
+  .child-one img {
+    height: 500px;
+    width: 450px;
+  }
+
+  .child-two {
+    margin: auto;
+  }
+
+  .msg {
+    font-weight: 600;
+    max-width: 200px;
+    margin: auto;
+  }
+  .error-button {
+    padding: 15px 25px;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1023px) {
+  /* .error-container {
+    height: 100%;
+    width: 100vw;
+  } */
+  .child-one img {
+    height: 550px;
+    width: 450px;
+  }
+  .child-two {
+    margin-right: 0px;
+  }
+  .msg {
+    text-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* .error-container {
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 50px;
+  } */
+  .child-one {
+    width: 70%;
+  }
+  .child-one img {
+    height: 550px;
+    width: 500px;
+  }
+  .child-two {
+    margin-right: 0px;
+  }
+  .msg {
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1700px) {
+}
