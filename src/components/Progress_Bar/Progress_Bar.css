@@ -10,16 +10,22 @@
 :root {
   --background-color: #ad0535e0;
   --primary-color: #f64c08;
-  --secondary-color: #353535;
+  --secondary-color: #ffffff;
   --orange-red: #ff4500;
 }
 
 body {
   height: 100vh;
+  /* background: var(--secondary-color); */
   background: linear-gradient(to right, #b85b3a, #4a7391, #353535);
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 80vw;
+  padding-right: 30px;
   position: relative;
   max-width: 500px;
   width: 100%;
@@ -37,12 +43,14 @@ body {
   border-radius: 15px;
 }
 
+
 .title-text {
   text-align: center;
   color: var(--secondary-color);
   background: var(--primary-color);
   border-radius: 28px;
   padding: 7px;
+  width: 95%;
   margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 25px;
@@ -171,13 +179,14 @@ body {
     margin-bottom: 30px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: 80vw;
     padding-right: 30px;
+    margin-top: 70px;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
   .container {
     width: 50vw;
     padding-right: 30px;

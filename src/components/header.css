@@ -79,13 +79,9 @@ font-family: 'Crimson Text', serif; */
   opacity: 1;
 }
 
-
 .mobile-menu {
   display: none;
 }
-
-
-/* @media only screen and (max-width: 768px) { */
 
 @media only screen and (max-width: 768px) {
   /* Header left */
@@ -106,7 +102,7 @@ font-family: 'Crimson Text', serif; */
     border: none;
     background-color: transparent;
   }
-  .mobile-menu > .toggle_menu{
+  .mobile-menu > .toggle_menu {
     cursor: pointer;
     font-size: 23px;
   }
@@ -127,12 +123,10 @@ font-family: 'Crimson Text', serif; */
     top: 68px;
     transition: all 0.5s ease-in-out;
     width: 100%;
-    height: 30vh;
+    height: 34vh;
     cursor: pointer;
   }
-  .nav-links-mobile > a > h4{
+  .nav-links-mobile > a > h4 {
     padding: 13px;
   }
 }
-
-
